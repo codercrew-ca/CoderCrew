@@ -117,6 +117,31 @@ secondary_header .logo a img {
 	color: #E5B340;  
 	cursor: pointer;
 }
+
+	.secondary_header ul li.active a {
+		color: white;
+		cursor: pointer;
+		text-decoration:none;
+	}
+
+
+	.secondary_header ul li a {
+		
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+		.secondary_header ul li a:hover:not(.active) {
+			color: #E5B340;
+		}
+
+secondary_header ul li a:active {
+	color: darkviolet;
+}
+
+
 .left_article {
 	background-color: #FFFFFF;
 	width: 100%;
@@ -501,6 +526,8 @@ body {
 	border: none;
 	overflow: hidden;
 	z-index: 1;
+	 
+	background: #FFFFFF;
 }
 .row1 {
 	width: 100%;
