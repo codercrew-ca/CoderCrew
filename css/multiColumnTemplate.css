@@ -1,14 +1,13 @@
 ﻿@charset "UTF-8";
 
 @font-face {
-	font-family: "Jura";
+	font-family: 'Jura', sans-serif;
 	src: url("/css/fonts/Jura-Regular.eot");
 	src: url("/css/fonts/Jura-Regular.ttf") format("opentype"),
-	
 }
 
 @font-face {
-	font-family: "Jockey One";
+	font-family: 'Jockey One', sans-serif;
 	src: url("/css/fonts/JockeyOne-Regular.eot");
 	src: url("/css/fonts/JockeyOne-Regular.ttf") format("opentype"),
 }
@@ -119,7 +118,7 @@ secondary_header .logo a img {
 	float: left;
 	margin-right: auto;
 	margin-top: 0px;
-	font-family: "Jockey One";
+	font-family: "Jockey One", sans-serif;
 	font-weight: bold;
 	color: black;
 	letter-spacing: 1px;
@@ -639,7 +638,7 @@ body {
 		background-color: #F2F4EF;
 		color: black;
 		font-size: 25px;
-		font-family: "Jockey One";
+		font-family: 'Jockey One', sans-serif;
 		text-align: left;
 	}
 
