@@ -90,6 +90,7 @@
 .secondary_header {
 	width: 70%;
 	padding-top: 0px;
+	top: 70px;
 	padding-bottom: 10px;
 	background-color: #FFFFFF;
 	clear: left;
@@ -111,7 +112,7 @@ secondary_header .logo a img {
 	margin-top: 0%;
 	margin-right: auto;
 	margin-bottom: 0px;
-	margin-left: 50px;
+	margin-left: 150px;
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-bottom: 15px;
