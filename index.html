@@ -65,7 +65,7 @@
             width: 352px;
             height: 258.5px;
             left: 93px;
-            top: 491.5px;
+            top: 481px;
             overflow: visible;
         }
 
@@ -97,23 +97,27 @@
         }
 
         #Component_2__1 {
-            position: absolute;
+            position: fixed;
             width: 1400px;
-            height: 161px;
+            height: 141px;
             left: 0px;
             top: 0px;
-            overflow: visible;
+            
+            z-index: 2;
+            
+            
         }
 
         #Component_1__1 {
-            position: absolute;
+            position: fixed;
             width: 1400px;
-            height: 161px;
+            height: 141px;
             left: 0px;
             top: 0px;
-            overflow: visible;
+            
+            z-index: 2;
         }
-
+        
         #Rectangle_1 {
             fill: rgba(255,255,255,1);
         }
@@ -267,8 +271,7 @@
 
         #Rectangle_2 {
             fill: rgba(227,174,46,1);
-            stroke: rgba(112,112,112,1);
-            stroke-width: 1px;
+                        stroke-width: 1px;
             stroke-linejoin: miter;
             stroke-linecap: butt;
             stroke-miterlimit: 4;
@@ -380,7 +383,7 @@
             position: absolute;
             overflow: visible;
             width: 881px;
-            height: 203px;
+            height: 213px;
             line-height: 23px;
             margin-top: -4px;
             text-align: left;
@@ -403,6 +406,10 @@
                     <rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="1400" height="161">
                     </rect>
                 </svg>
+                <svg class="Rectangle_2">
+                    <rect id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="1400" height="14">
+                    </rect>
+                </svg>
                 <ul>
                     <li>
                         <div id="WHO_ARE_WE">
@@ -423,11 +430,10 @@
                 <a href="HomePage1 - Copy (2).html" target="targetframe">  <img id="Logo_Final1111" src="/images/Logo_Final1111.png"> </a>
 
             </div>
-            <svg class="Rectangle_2">
-                <rect id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="1400" height="34">
-                </rect>
-            </svg>
+           
         </div>
+           
+        
         <iframe src="/HomePage1 - Copy (2).html" class="responsive-iframe" name="targetframe">
         </iframe>
 
