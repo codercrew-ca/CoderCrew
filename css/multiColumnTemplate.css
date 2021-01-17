@@ -90,12 +90,13 @@
 .secondary_header {
 	width: 70%;
 	padding-top: 0px;
-	top: 70px;
+	top: 50px;
 	padding-bottom: 10px;
 	background-color: #FFFFFF;
 	clear: left;
 	display: inline-block;
 	z-index: 10;
+	text-align:center;
 }
 
 secondary_header .logo a img {
@@ -112,7 +113,7 @@ secondary_header .logo a img {
 	margin-top: 0%;
 	margin-right: auto;
 	margin-bottom: 0px;
-	margin-left: 150px;
+	margin-left: 50px;
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-bottom: 15px;
