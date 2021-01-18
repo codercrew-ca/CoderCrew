@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <title>CoderCrew</title>
-        <!-- add icon link -->
-    <link rel="icon" href="/images/Logo_Small.ico"
-          type="image/x-icon">
     <link href="/css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
@@ -24,6 +21,18 @@
 
     </script>
     <style type="text/css">
+
+        @media (max-width: 479px) {
+            body {
+                font-size: 13px;
+            }
+        }
+        
+@media (max-width: 64rem) {
+	.resp .paging-navigation .page-numbers {
+		display: inline-block;
+	}
+}
         .mediaViewInfo {
             --web-view-name: Custom Size – 1;
             --web-view-id: Custom_Size__1;
@@ -44,37 +53,38 @@
 
         #Custom_Size__1 {
             position: absolute;
-            max-width: 100%;
-            max-height: 800px;
+            width: 100%;
+            height: auto;
             background-color: #ffffff;
             overflow: hidden;
             --web-view-name: Custom Size – 1;
             --web-view-id: Custom_Size__1;
             --web-scale-on-resize: true;
             --web-enable-deep-linking: true;
+            
         }
 
         #scratch_girl {
             position: absolute;
-            width: 365px;
+            width: 100%;
             height: 268.5px;
-            left: 972px;
-            top: 24px;
+            left: 952px;
+            top: 185px;
             overflow: visible;
         }
 
         #thunkable {
             position: absolute;
-            width: 352px;
+            width: 100%;
             height: 258.5px;
             left: 93px;
-            top: 351px;
+            top: 481px;
             overflow: visible;
         }
 
         #The_excellent_balance_of_real_ {
             left: 93px;
-            top: 24px;
+            top: 174px;
             position: absolute;
             overflow: visible;
             width: 901px;
@@ -86,7 +96,7 @@
             font-style: normal;
             font-weight: normal;
             font-size: 15px;
-            color: #000000;
+            color: rgba(3,3,5,1);
             letter-spacing: 0.06px;
         }
 
@@ -95,28 +105,37 @@
             width: 171px;
             height: 101.5px;
             left: 1072px;
-            top: 351px;
+            top: 491px;
             overflow: visible;
         }
 
         #Component_2__1 {
-            position: absolute;
-            width: 1400px;
-            height: 161px;
+            position: fixed;
+            width: 100%;
+            height: 120px;
             left: 0px;
             top: 0px;
-            overflow: visible;
+            margin-top:0px;
+            background-color:white;
+            z-index:10; 
+            text-align:center;
         }
 
         #Component_1__1 {
-            position: absolute;
-            width: 1400px;
-            height: 161px;
+            position: fixed;
+            width: 100%;
+            height: 120px;
             left: 0px;
             top: 0px;
-            overflow: visible;
+            background-color: #ffffff;
+            margin-top: 0px;
+            background-color: white;
+            z-index: 10;
+            text-align: center;
         }
 
+
+        
         #Rectangle_1 {
             fill: rgba(255,255,255,1);
         }
@@ -125,9 +144,10 @@
             position: absolute;
             overflow: visible;
             width: 1400px;
-            height: 161px;
+            height: 100px;
             left: 0px;
             top: 0px;
+            background-color: rgba(255,255,255,1);
         }
 
         #WHO_ARE_WE {
@@ -145,6 +165,36 @@
             color: rgba(2,2,4,1);
         }
 
+
+      
+
+            #WHO_ARE_WE a:hover {
+                color: #E5B340;
+                cursor: pointer;
+            }
+
+            #WHO_ARE_WE a.active a {
+                color: white;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+
+            #WHO_ARE_WE a {
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                #WHO_ARE_WE a:hover:not(.active) {
+                    color: #E5B340;
+                }
+
+        #WHO_ARE_WE a:active {
+            color: darkviolet;
+        }
+
         #WHAT_WE_OFFER {
             left: 674px;
             top: 76px;
@@ -160,6 +210,34 @@
             color: rgba(28,29,28,1);
         }
 
+
+            #WHAT_WE_OFFER a:hover {
+                color: #E5B340;
+                cursor: pointer;
+            }
+
+            #WHAT_WE_OFFER a.active a {
+                color: white;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+
+            #WHAT_WE_OFFER a {
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                #WHAT_WE_OFFER a:hover:not(.active) {
+                    color: #E5B340;
+                }
+
+                #WHAT_WE_OFFER a:active {
+                    color: darkviolet;
+                }
+
         #CONTACT {
             left: 896px;
             top: 76px;
@@ -174,6 +252,32 @@
             font-size: 23px;
             color: rgba(28,28,28,1);
         }
+            #CONTACT a:hover {
+                color: #E5B340;
+                cursor: pointer;
+            }
+
+            #CONTACT a.active a {
+                color: white;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+
+            #CONTACT a {
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                #CONTACT a:hover:not(.active) {
+                    color: #E5B340;
+                }
+
+                #CONTACT a:active {
+                    color: darkviolet;
+                }
 
         #Logo_Final1111 {
             position: absolute;
@@ -186,12 +290,12 @@
 
         #Rectangle_2 {
             fill: rgba(227,174,46,1);
-            stroke: rgba(112,112,112,1);
             stroke-width: 1px;
             stroke-linejoin: miter;
             stroke-linecap: butt;
             stroke-miterlimit: 4;
             shape-rendering: auto;
+            background-color: #e3ae2e;
         }
 
         .Rectangle_2 {
@@ -201,11 +305,12 @@
             height: 34px;
             left: 0px;
             top: 0px;
+            background-color: #e3ae2e;
         }
 
         #Through_Coding_children_become {
             left: 93px;
-            top: 285px;
+            top: 380px;
             position: absolute;
             overflow: visible;
             width: 1148px;
@@ -217,13 +322,13 @@
             font-style: normal;
             font-weight: normal;
             font-size: 15px;
-            color: #000000;
+            color: rgba(11,11,14,1);
             letter-spacing: 0.06px;
         }
 
         #Why_Coding {
             left: 463px;
-            top: 351px;
+            top: 495px;
             position: absolute;
             overflow: visible;
             width: 91px;
@@ -235,13 +340,13 @@
             font-style: normal;
             font-weight: normal;
             font-size: 15px;
-            color: #000000;
+            color: rgba(112,112,112,1);
             letter-spacing: 0.06px;
         }
 
         #A_learning_experience_like_nev {
             left: 93px;
-            top: 105px;
+            top: 255px;
             position: absolute;
             overflow: visible;
             width: 921px;
@@ -253,13 +358,13 @@
             font-style: normal;
             font-weight: normal;
             font-size: 15px;
-            color: #000000;
+            color: rgba(11,11,13,1);
             letter-spacing: 0.1px;
         }
 
         #Put_simply_Coding_is_the_metho {
             left: 463px;
-            top: 388px;
+            top: 528px;
             position: absolute;
             overflow: hidden;
             width: 581px;
@@ -271,13 +376,13 @@
             font-style: normal;
             font-weight: normal;
             font-size: 15px;
-            color: #000000;
+            color: rgba(112,112,112,1);
             letter-spacing: 0.06px;
         }
 
         #What_is_coding {
             left: 463px;
-            top: 458px;
+            top: 608px;
             position: absolute;
             overflow: visible;
             width: 110px;
@@ -289,17 +394,17 @@
             font-style: normal;
             font-weight: normal;
             font-size: 15px;
-            color: #000000;
+            color: rgba(112,112,112,1);
             letter-spacing: 0.06px;
         }
 
         #Self-driving_cars_Siri_and_Alp {
             left: 463px;
-            top: 488px;
+            top: 638px;
             position: absolute;
             overflow: visible;
             width: 881px;
-            height: 223px;
+            height: 213px;
             line-height: 23px;
             margin-top: -4px;
             text-align: left;
@@ -307,43 +412,41 @@
             font-style: normal;
             font-weight: normal;
             font-size: 15px;
-            color: #000000;
+            color: rgba(112,112,112,1);
             letter-spacing: 0.06px;
         }
+
     </style>
 </head>
 
 <body>
-    <div style="width:100%;height:auto;">
-        <img id="scratch_girl" src="/images/scratch1.png">
+    <div id="Custom_Size__1">
 
-        <img id="thunkable" src="/images/thunkable1.png"  >
+        <header>
+            <div style="position:fixed;width:100%;margin-top:0px;background-color:#f3f9fd;z-index:10; text-align:center">
+                <div style="width:100%;background-color:#E5B340;height:15px;"></div>
+                <a href="/HomePage1 - Copy (2).html" target="targetframe" style="text-decoration:none;">
+                    <img src="images/Logo_Final1111.png" style="margin-top:0px;" />
+                </a>
+                <nav class="secondary_header" id="menu">
 
-        <div id="The_excellent_balance_of_real_">
-            <span>The excellent balance of real coding language presented using a fun and engaging platform minimizes  the risk of frustration <br />and maximizes knowledge retention. This, in turn, can make students feel like real  programmers and software engineers<br />For the more technology-inclined kids, this feeling can be incredibly satisfying.</span>
-        </div>
-        <img id="try" src="/images/try1.png"/> 
+                    <ul>
+                        <li><a style="text-decoration:none;" href="/Aboutus - Copy.html" target="targetframe"> WHO WE ARE </a></li>
+                        <li><a href="/Whatweoffer - Copy - Copy.html" target="targetframe"> WHAT WE OFFER </a></li>
+                        <li><a href="/ContactUs.html" target="targetframe">CONTACT US </a></li>
 
-        
-        <div id="Through_Coding_children_become">
-            <span>Through coding, children become part of this revolution and are able to understand, appreciate and contribute  to this rapid change.  <br />Whether or not your child aspires to be an engineer, early exposure to coding develops  their logical problem-solving skills, unleashes their creativity, and empowers <br />them to freely express themselves.</span>
-        </div>
-        <div id="Why_Coding">
-            <span>Why Coding?</span>
-        </div>
-        <div id="A_learning_experience_like_nev">
-            <span>A learning experience like never before that stands apart.  A commitment to ensure complete focus and development with <br />tangible results.We create an engaging learning environment that promotes inquisitiveness, excitement, and inspiration <br />in students. </br>If you and/or your child are interested in learning how to code, these programs are your best bet. They’ve perfected the art <br />of being engaging and educational  without compromising knowledge quality and retention</span>
-        </div>
-        <div id="Put_simply_Coding_is_the_metho">
-            <span>Put simply, Coding is the method of communicating with a computer.  It is using a language that a computer understands to give it instructions to perform specific functions.  </span>
-        </div>
-        <div id="What_is_coding">
-            <span>What is coding?</span>
-        </div>
-        <div id="Self-driving_cars_Siri_and_Alp">
-            <span>Self-driving cars, Siri and AlphaGo are just a few examples of how AI and Machine Learning is transforming our lives. Software and robots are increasingly more capable of handling tasks previously carried out by humans, and this is just the beginning! Through Coding, children become part of this revolution and are able to understand, appreciate and contribute to this rapid change.   Whether or not your child aspires to be an engineer, early exposure to coding develops their logical problem-solving skills, unleashes their creativity, and empowers them to freely express themselves.</span>
-        </div>
+                    </ul>
+                </nav>
+                
+            </div>
+        </header>
+
+
+        <iframe src="/HomePage1 - Copy (2).html" class="responsive-iframe" name="targetframe">
+        </iframe>
+
     </div>
+    
 
 </body>
 </html>
