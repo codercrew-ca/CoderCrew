@@ -92,11 +92,11 @@
 	padding-top: 0px;
 	top: 50px;
 	padding-bottom: 10px;
-	background-color: #FFFFFF;
+	background-color: #f3f9fd;
 	clear: left;
 	display: inline-block;
 	z-index: 10;
-	text-align:center;
+	text-align: center;
 }
 
 secondary_header .logo a img {
@@ -106,7 +106,7 @@ secondary_header .logo a img {
 }
 
 .logo {
-	margin-left: 40px;
+	margin-left: 100px;
 	display: inline-block;
 }
 .container .secondary_header ul {
