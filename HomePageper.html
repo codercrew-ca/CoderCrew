@@ -1,0 +1,146 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoderCrew</title>
+    <link href="/css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <style type="text/css">
+        /* Create three unequal columns that floats next to each other */
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* Create three unequal columns that floats next to each other */
+        .columnS {
+            flex: 25%;
+            margin: 10px;
+            padding: 10px;
+            height: 300px; /* Should be removed. Only for demonstration */
+        }
+
+        .columnB {
+            flex: 50%;
+            padding: 10px;
+            height: 300px; /* Should be removed. Only for demonstration */
+            margin: 10px;
+        }
+
+            .columnB p {
+                padding-left: 14px;
+                padding-right: 14px;
+                text-align: justify;
+                font-family: Jura;
+                font-size: 15px;
+            }
+
+            .columnB p {
+                padding-left: 14px;
+                padding-right: 14px;
+                text-align: justify;
+                font-family: Jura;
+                font-size: 15px;
+            }
+
+
+
+
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+            .column.side, .column.middle {
+                width: 100%;
+            }
+        }
+
+        .Custom_Size__1 {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin: 0;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="Custom_Size__1">
+
+        <div class="row">
+            <div class="columnB" style="background-color:#fff;">
+                <p>
+                    The excellent balance of real coding language presented using a fun and engaging platform minimizes the risk of frustration
+                    and maximizes knowledge retention. This, in turn, can make students feel like real programmers and software engineers
+                    For the more technology-inclined kids, this feeling can be incredibly satisfying.
+                </p>
+                <p>
+                    A learning experience like never before that stands apart. A commitment to ensure complete focus and development with
+                    tangible results.We create an engaging learning environment that promotes inquisitiveness, excitement, and inspiration
+                    in students.
+                </p>
+                <p>
+                    If you and/or your child are interested in learning how to code, these programs are your best bet. They’ve perfected the art
+                    of being engaging and educational without compromising knowledge quality and retention
+                </p>
+                <p>
+                    Through coding, children become part of this revolution and are able to understand, appreciate and contribute to this rapid change.
+                    Whether or not your child aspires to be an engineer, early exposure to coding develops their logical problem-solving skills, unleashes their creativity, and empowers
+                    them to freely express themselves.
+                </p>
+
+            </div>
+            <div class="columnS" style="background-color:#fff;">
+                <img src="images/scratch1.png" />
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="columnS" style="background-color:#fff;">
+               
+                <img src="images/thunkable1.png" />
+            </div>
+            <div class="columnB" style="background-color:#fff;">
+                <p>What is Coding ?</p>
+                <p>Put simply, Coding is the method of communicating with a computer.  It is using a language that a computer understands to give it instructions to perform specific functions.  </p>
+                <p>Why Coding ?</p>
+               
+                <p>Self-driving cars, Siri and AlphaGo are just a few examples of how AI and Machine Learning is transforming our lives. Software and robots are increasingly more capable of handling tasks previously carried out by humans, and this is just the beginning! Through Coding, children become part of this revolution and are able to understand, appreciate and contribute to this rapid change. Whether or not your child aspires to be an engineer, early exposure to coding develops their logical problem-solving skills, unleashes their creativity, and empowers them to freely express themselves.</p>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+</html>

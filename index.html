@@ -27,6 +27,12 @@
                 font-size: 13px;
             }
         }
+
+        @media (max-width: 480px) {
+            .text {
+                font-size: 12px;
+            }
+        }
         
 @media (max-width: 64rem) {
 	.resp .paging-navigation .page-numbers {
@@ -64,6 +70,13 @@
             
         }
 
+
+        @media (max-width: 480px) {
+            .text {
+                font-size: 12px;
+            }
+        }
+
         #scratch_girl {
             position: absolute;
             width: 100%;
@@ -73,16 +86,49 @@
             overflow: visible;
         }
 
+        @media (max-width: 680px) {
+            #scratch_girl {
+                position: absolute;
+                width: 50%;
+                height: 168.5px;
+                left: 602px;
+                top: 185px;
+                overflow: visible;
+            }
+        }
+
         #thunkable {
             position: absolute;
-            width: 100%;
+            width: 358px;
             height: 258.5px;
             left: 93px;
             top: 481px;
             overflow: visible;
         }
+        @media (max-width: 680px) {
+            #thunkable {
+                position: absolute;
+                width: 200px;
+                height: auto;
+                left: 93px;
+                top: 481px;
+                overflow: visible;
+            }
+        }
 
-        #The_excellent_balance_of_real_ {
+        @media screen and ( max-width: 1024px ) {
+            img.responsive {
+                width: 200px;
+            }
+        }
+
+        @media screen and ( min-width: 1025px) {
+            img.responsive {
+                width: 300px;
+            }
+        }
+
+        #top_text {
             left: 93px;
             top: 174px;
             position: absolute;
@@ -98,6 +144,8 @@
             font-size: 15px;
             color: rgba(3,3,5,1);
             letter-spacing: 0.06px;
+
+         
         }
 
         #try {
@@ -416,6 +464,15 @@
             letter-spacing: 0.06px;
         }
 
+        #TopDiv {
+            position: fixed;
+            width: 100%;
+            margin-top: 0px;
+            background-color: #f3f9fd;
+            z-index: 10;
+            text-align: center;
+        }
+
     </style>
 </head>
 
@@ -423,16 +480,16 @@
     <div id="Custom_Size__1">
 
         <header>
-            <div style="position:fixed;width:100%;margin-top:0px;background-color:#f3f9fd;z-index:10; text-align:center">
+            <div id="TopDiv" >
                 <div style="width:100%;background-color:#E5B340;height:15px;"></div>
-                <a href="/HomePage1 - Copy (2).html" target="targetframe" style="text-decoration:none;">
+                <a href="/HomePageper.html" target="targetframe" style="text-decoration:none;">
                     <img src="images/Logo_Final1111.png" style="margin-top:0px;" />
                 </a>
                 <nav class="secondary_header" id="menu">
 
                     <ul>
-                        <li><a style="text-decoration:none;" href="/Aboutus - Copy.html" target="targetframe"> WHO WE ARE </a></li>
-                        <li><a href="/Whatweoffer - Copy - Copy.html" target="targetframe"> WHAT WE OFFER </a></li>
+                        <li><a style="text-decoration:none;" href="/Aboutusper.html" target="targetframe"> WHO WE ARE </a></li>
+                        <li><a href="/Whatweofferper.html" target="targetframe"> WHAT WE OFFER </a></li>
                         <li><a href="/ContactUs.html" target="targetframe">CONTACT US </a></li>
 
                     </ul>
@@ -442,7 +499,7 @@
         </header>
 
 
-        <iframe src="/HomePage1 - Copy (2).html" class="responsive-iframe" name="targetframe">
+        <iframe src="/HomePageper.html" class="responsive-iframe" name="targetframe">
         </iframe>
 
     </div>
