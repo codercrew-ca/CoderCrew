@@ -1,74 +1,79 @@
 ﻿<!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
-    <title>Who we are</title>
-    <link href="/css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<title>Who we are</title>
+	<link href="/css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
-    <style type="text/css">
-        /* Create three unequal columns that floats next to each other */
+	<style type="text/css">
+		/* Create three unequal columns that floats next to each other */
+		@charset "UTF-8";
 
-        container {
-            align-content: stretch;
-            width:100%;
-        }
 
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0px;
-            padding: 0px;
-            
-            align-content: stretch;
-            justify-content:center;
-        }
 
-        /* Create three unequal columns that floats next to each other */
-        .columnS {
-            flex: 20%;
-            margin-top:10px;
-            padding-top: 10px;
-            float:left;
-            
-        }
+		@media (max-width: 64rem) {
+			.resp .paging-navigation .page-numbers {
+				display: inline-block;
+			}
+		}
 
-        .columnB {
-            flex: 50%;
-            padding: 10px;           
-            margin: 10px;
-        }
-            .columnB p {
-                padding-left: 14px;
-                padding-right: 14px;
-                text-align:justify;
-                font-family :Jura;
-                font-size:15px;
-                
 
+		/* Change the width of the three columns to 100%
+		(to stack horizontally on small screens) */
+		@media only screen and (max-width: 600px) {
+			.columns {
+				width: 100%;
+			}
+		}
+
+
+		container {
+			align-content: stretch;
+			width: 100%;
+		}
+
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0px;
+			padding: 0px;
+			align-content: stretch;
+			justify-content: center;
+		}
+
+		/* Create three unequal columns that floats next to each other */
+		.columnS {
+			flex: 20%;
+			margin-top: 10px;
+			padding-top: 10px;
+			float: left;
+		}
+
+      
+
+            .columnB {
+                flex: 50%;
+                padding: 0px;
+                margin: 10px;
             }
 
-            .columnB p {
-                padding-left: 14px;
-                padding-right: 14px;
-                text-align: justify;
-                font-family: Jura;
-                font-size: 15px;
-            }
+           
 
 
-        @media screen and (max-width: 600px) {
+
+        @media (max-width: 320px) {
             .columnB p {
                 padding-left: 4px;
                 padding-right: 4px;
@@ -78,90 +83,106 @@
             }
         }
 
+                @media (min-width: 321px) and (max-width: 768px) {
+                    .columnB p {
+                        padding-left: 7px;
+                        padding-right: 7px;
+                        text-align: justify;
+                        font-family: Jura;
+                        font-size: 13px;
+                    }
+                }
 
-           
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+                @media (min-width: 769px) {
 
-        /* Style the footer */
-        .footer {
-            background-color: #f1f1f1;
-            padding: 10px;
-            text-align: center;
-        }
+                    .columnB p {
+                        padding-left: 14px;
+                        padding-right: 14px;
+                        text-align: justify;
+                        font-family: Jura;
+                        font-size: 15px;
+                    }
+                }
+                /* Clear floats after the columns */
+                .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
 
-        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-        @media (max-width: 600px) {
-            .column.side, .column.middle {
-                width: 100%;
-            }
-        }
+                /* Style the footer */
+                .footer {
+                    background-color: #f1f1f1;
+                    padding: 10px;
+                    text-align: center;
+					z-index:10;
+                }
 
-        .Custom_Size__1 {
-            width: 100%;
-            height: auto;
-            text-align: center;
-            margin: 0;
-            padding: 2px;
-            align-content: stretch;
-        }
+                /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+                @media (max-width: 600px) {
+                    .column.side, .column.middle {
+                        width: 100%;
+                    }
+                }
 
-
-       
-    </style>
+                .Custom_Size__1 {
+                    width: 100%;
+                    height: auto;
+                    text-align: center;
+                    margin: 0;
+                    padding: 2px;
+                    align-content: stretch;
+                }
+	</style>
 </head>
 <body>
 
-    <div id="Custom_Size__1">
+	<div id="Custom_Size__1">
 
-        <div class="row">
-            <div class="columnB" style="background-color:#fff;">
-                <p> “History will judge us by the difference we make in the everyday lives of children.” - Nelson Mandela</p>
-                <p>
-                    We believe in the power of dreams, the joy of fulfilment and the legacy of success. And providing
-                    children the knowledge to work towards fulfilling theirs, is what we are all about
-                </p>
-                <p>
-                    A group of like minded parents, with several years of experience in the field of Information
-                    technology have teamed up to be the wind beneath the wings of little aspirants to help them
-                    have a goal, work towards it and see them conquer it
-                </p>
-                <p>
-                    It’s always a new beginning, evolving as we go, embracing the latest in technology and assuring
-                    that what the child learns today will be a strong foundation for his tomorrow
-                </p>
+		<div class="row">
+			<div class="columnB" style="background-color:#fff;">
+				<p> “History will judge us by the difference we make in the everyday lives of children.” - Nelson Mandela</p>
+				<p>
+					We believe in the power of dreams, the joy of fulfilment and the legacy of success. And providing
+					children the knowledge to work towards fulfilling theirs, is what we are all about.
+				</p>
+				<p>
+					A group of like minded parents, with several years of experience in the field of Information
+					technology have teamed up to be the wind beneath the wings of little aspirants to help them
+					have a goal, work towards it and see them conquer it.
+				</p>
+				<p>
+					It’s always a new beginning, evolving as we go, embracing the latest in technology and assuring
+					that what the child learns today will be a strong foundation for his tomorrow.
+				</p>
 
-            </div>
-            <div class="columnS" style="background-color:#fff;">
-                <img src="images/story11.png" style="max-width:100%;" />
+			</div>
+			<div class="columnS" style="background-color:#fff;">
+				<img src="images/story11.png" style="max-width:100%;" />
 
-            </div>
+			</div>
 
-        </div>
-        <div class="row">
-            <div class="columnS" style="background-color:#fff;">
-                <img src="images/vision11.png" style="max-width:100%;" /> 
+		</div>
+		<div class="row">
+			<div class="columnS" style="background-color:#fff;">
+				<img src="images/vision11.png" style="max-width:100%;" />
 
-            </div>
-            <div class="columnB" style="background-color:#fff;">
-                <p>At Coder Crew we aim to provide the best learning experience to a child, of the latest technology, helping them discover the numerous possibilities of problem solving using this technology and channelizing their abilities to create a working model of the solution.</p>
-                <p>We aim to….</p>
-                <ul>
-                    <li><p>empower them with the ability of logical and critical thinking which would trump all academic skills going forward.</p></li>
-                    <li><p>provide an in-depth knowledge of technology starting with the basics which ensures a strong foundation to build on.</p></li>
-                    <li><p>give children the power of technology to bring their dreams to life and to awaken little minds to the numerous possibilities of problem solving.</p></li>
-                    <li><p>We believe that bringing in the fun element into learning helps retain their interest and motivates them to explore beyond their lessons.</p></li>
-                </ul>
-                <p>After all, Education is about helping children discover their ideas, giving them the tools to build and preparing them to launch themselves into the world of infinite possibilities.</p>
+			</div>
+			<div class="columnB" style="background-color:#fff;">
+				<p>At Coder Crew we aim to provide the best learning experience to a child, of the latest technology, helping them discover the numerous possibilities of problem solving using this technology and channelizing their abilities to create a working model of the solution.</p>
+				<p>We aim to….</p>
+				<ul>
+					<li><p>empower them with the ability of logical and critical thinking which would trump all academic skills going forward.</p></li>
+					<li><p>provide an in-depth knowledge of technology starting with the basics which ensures a strong foundation to build on.</p></li>
+					<li><p>give children the power of technology to bring their dreams to life and to awaken little minds to the numerous possibilities of problem solving.</p></li>
+					<li><p>We believe that bringing in the fun element into learning helps retain their interest and motivates them to explore beyond their lessons.</p></li>
+				</ul>
+				<p>After all, Education is about helping children discover their ideas, giving them the tools to build and preparing them to launch themselves into the world of infinite possibilities.</p>
 
-            </div>
+			</div>
 
-        </div>
-    </div>
+		</div>
+	</div>
 
 
 </body>

@@ -7,7 +7,7 @@
     <title>CoderCrew</title>
     <link href="/css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400&display=swap" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -55,13 +55,35 @@
             }
 
 
-        @media screen and (max-width: 600px) {
+
+        @media (max-width: 320px) {
             .columnB p {
                 padding-left: 4px;
                 padding-right: 4px;
                 text-align: justify;
                 font-family: Jura;
                 font-size: 12px;
+            }
+        }
+
+        @media (min-width: 321px) and (max-width: 768px) {
+            .columnB p {
+                padding-left: 7px;
+                padding-right: 7px;
+                text-align: justify;
+                font-family: Jura;
+                font-size: 13px;
+            }
+        }
+
+        @media (min-width: 769px) {
+
+            .columnB p {
+                padding-left: 14px;
+                padding-right: 14px;
+                text-align: justify;
+                font-family: Jura;
+                font-size: 15px;
             }
         }
 
@@ -132,11 +154,12 @@
         </div>
         <div style="        width: 100%;
         text-align: center;
-        color: #E5B340;
+        color: #000;
         font-family: 'Jockey One';
         font-size: 20px;
         text-transform: uppercase;
-        display: block;">
+        display: block;
+        text-shadow:3px 3px 6px #0094ff;">
             <span>INSPire to innovate ; empower to create & motivate to excel ;</span>
         </div>
         <div class="row">

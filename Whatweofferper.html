@@ -8,7 +8,9 @@
     <title>What we offer</title>
     <link href="/css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,7 +22,7 @@
 
 
     </script>
-   
+
 
     <style type="text/css">
         /* Create three unequal columns that floats next to each other */
@@ -28,58 +30,59 @@
         container {
             width: 100%;
             justify-content: center;
-            padding : 2%;
-           
+            padding: 2%;
         }
 
         .row {
             display: flex;
-            flex-wrap: wrap;            
-            justify-content:center;
+            flex-wrap: wrap;
+            justify-content: center;
             flex-direction: row;
             text-align: center;
-            padding:5px;
+            padding: 5px;
         }
 
         /* Create three unequal columns that floats next to each other */
         .columnS {
-            flex:  30%;
+            flex: 30%;
             margin-top: 0px;
-            
-            float:right;
-
-            
+            float: right;
         }
 
         .columnB {
             flex: 30%;
-            
-            padding-left:10%
-            
+            padding-left: 10%
         }
+
         .columnT {
             flex: 30%;
-                       
-            float:left;
+            float: left;
         }
 
 
-            .columnB p {
-                padding-left: 4px;
-                padding-right: 4px;
-                text-align: justify;
-                font-family: Jura;
-                font-size: 15px;
-                
-            }
+        .columnB p {
+            padding-left: 4px;
+            padding-right: 4px;
+            text-align: justify;
+            font-family: Jura;
+            font-size: 15px;
+        }
 
-            .columnB p {
-                padding-left: 4px;
-                padding-right: 4px;
-                text-align: justify;
-                font-family: Jura;
-                font-size: 15px;
-            }
+        .columnB p {
+            padding-left: 4px;
+            padding-right: 4px;
+            text-align: justify;
+            font-family: Jura;
+            font-size: 15px;
+        }
+
+        .columnT p {
+          
+            text-align: justify;
+            font-family: Jura;
+            font-size: 15px;
+        }
+
 
         @media screen and (max-width: 600px) {
             .columnB p {
@@ -88,6 +91,61 @@
                 text-align: justify;
                 font-family: Jura;
                 font-size: 12px;
+            }
+
+            .columnT p {
+                 text-align: justify;
+                font-family: Jura;
+                font-size: 12px;
+            }
+        }
+
+
+
+        @media (max-width: 320px) {
+            .columnB p {
+                padding-left: 4px;
+                padding-right: 4px;
+                text-align: justify;
+                font-family: Jura;
+                font-size: 12px;
+            }
+
+            .columnT p {
+                text-align: justify;
+                font-family: Jura;
+                font-size: 12px;
+            }
+        }
+
+        @media (min-width: 321px) and (max-width: 768px) {
+            .columnB p {
+                padding-left: 7px;
+                padding-right: 7px;
+                text-align: justify;
+                font-family: Jura;
+                font-size: 13px;
+            }
+            .columnT p {
+                text-align: justify;
+                font-family: Jura;
+                font-size: 13px;
+            }
+        }
+
+        @media (min-width: 769px) {
+
+            .columnB p {
+                padding-left: 14px;
+                padding-right: 14px;
+                text-align: justify;
+                font-family: Jura;
+                font-size: 15px;
+            }
+            .columnT p {
+                text-align: justify;
+                font-family: Jura;
+                font-size: 15px;
             }
         }
 
@@ -101,6 +159,7 @@
             font-size: 20px;
             color: rgba(11,11,14,1);
         }
+
         .columnT item {
             white-space: nowrap;
             text-justify: distribute;
@@ -156,7 +215,7 @@
             margin: 0;
             padding: 0;
             border: 0;
-            width:100%;
+            width: 100%;
         }
 
 
@@ -179,13 +238,12 @@
 
 
         .button {
-           
             border: none;
             color: #000;
             text-align: center;
             text-decoration: none;
             font-size: 15px;
-            font-family:'Jockey One';
+            font-family: 'Jockey One';
         }
 
         @media only screen and (max-width: 600px) {
@@ -205,8 +263,10 @@
                 <p>
                     The block-based drag-and-drop coding
                     is honestly one of the best and simplest
-                    ways to introduce kids to coding. Visual
-                    coding blocks greatly reduce the risk of
+                    ways to introduce kids to coding. 
+                </p>
+                <p>
+                    Visual coding blocks greatly reduce the risk of
                     simple syntax errors (like forgetting a colon
                     or mixing up a closed parenthesis with a
                     closed bracket) getting in the way of learning
@@ -226,7 +286,7 @@
                         <li>C$90 / Month</li>
                         <li>Age 7+</li>
                         <li>Scratch</li>
-                        <li>26 Weeks(4 Months)</li>
+                        <li>16 Weeks(4 Months)</li>
                         <li>1 hour per week</li>
                         <li>Lessons, Practice</li>
                         <li>Projects</li>
@@ -245,7 +305,10 @@
                     <p>
                         The ability to code computer programs
                         is an important part of literacy in today’
-                        s society. When people learn to code
+                        s society.
+                    </p>
+                    <p>
+                        When people learn to code
                         in Scratch, they learn important strategies
                         for solving problems,designing projects,
                         and communicating ideas.
@@ -261,13 +324,13 @@
                     <div class="columnsPrice">
                                              <ul class="columnsPrice price">
                             <li class="columnsPrice price header">Programming Level- I I</li>
-                            <li><p></p>C$110 / Month</li>
+                            <li>C$110 / Month</li>
                             <li>Age 8+</li>
                             <li style="text-align:justify">Scratch, Intro to Thunkable</li>
                             <li>20 Weeks(5 Months)</li>
                             <li>1 hour per week</li>
                             <li>Lessons, Practice</li>
-                            <li>Projects</li>
+                            <li>Projectsli</li>
                             <li><a href="Register.html" class="button">Register</a></li>
                         </ul>
                     </div>
