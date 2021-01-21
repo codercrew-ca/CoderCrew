@@ -599,20 +599,59 @@ body {
     height: 600px;
     overflow: hidden;
 }
+@media (max-width: 320px) {
 
-.responsive-iframe {
-    position: relative;
-    top: 150px;
-    
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 800px;
-    border: none;
-    overflow: hidden;
-    margin-bottom:2px;
-    
+
+    .responsive-iframe {
+        position: relative;
+        top: 150px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 700px;
+        border: none;
+        overflow: visible;
+        margin-bottom: 2px;
+    }
+
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+
+
+    .responsive-iframe {
+        position: relative;
+        top: 150px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 800px;
+        border: none;
+        overflow: visible;
+        margin-bottom: 2px;
+    }
+
+}
+
+@media (min-width: 769px) {
+
+
+
+    .responsive-iframe {
+        position: relative;
+        top: 150px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 800px;
+        border: none;
+        overflow: hidden;
+        margin-bottom: 2px;
+    }
+
 }
 
 .row1 {
