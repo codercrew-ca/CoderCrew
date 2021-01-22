@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <script language="javascript">
-
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            document.getElementById("contactus").target = "targetframe";     //change target
+        }
 
     </script>
     <style type="text/css">
@@ -46,7 +48,7 @@
                     <ul>
                         <li><a style="text-decoration:none;" href="/Aboutusper.html" target="targetframe"> WHO WE ARE </a></li>
                         <li><a href="/Whatweofferper.html" target="targetframe"> WHAT WE OFFER </a></li>
-                        <li><a href="/ContactUs.html" target="targetframe">CONTACT US </a></li>
+                        <li><a href="ContactUs.html" id="contactus" target="targetframe">CONTACT US </a></li>
 
                     </ul>
                 </nav>
