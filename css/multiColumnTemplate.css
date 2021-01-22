@@ -616,7 +616,7 @@ body {
 /* Then style the iframe to fit in the container div with full height and width */
 .responsive-iframe {
     position: relative;
-    top: 0px;
+    margin-top: 150px;
     left: 0;
     bottom: 0;
     right: 0;
