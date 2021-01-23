@@ -8,7 +8,7 @@
     <title>What we offer</title>
     <link href="/css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
@@ -23,7 +23,74 @@
 
     </script>
 
+    <style type="text/css">
 
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 0px;
+            background-color: #fff;
+            padding: 0px;
+            justify-content: center;
+        }
+
+        .item2 {
+            justify-self: stretch;
+        }
+
+        .item6 {
+            justify-self: stretch;
+        }
+
+
+        .grid-item {
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 0px;
+            text-align: center;
+            background-color: aqua;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 2px 0;
+        }
+
+        .item5 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .item1 {
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-left: 1px;
+            padding-right: 1px;
+            text-align: justify;
+            font-family: Jura;
+            font-size: 13px;
+        }
+
+        .item4 {
+            text-align: justify;
+            font-family: Jura;
+            padding-left: 1px;
+            padding-right: 1px;
+            text-align: justify;
+            font-family: Jura;
+            font-size: 13px;
+        }
+
+        .item6 {
+            text-align: justify;
+            font-family: Jura;
+            padding-left: 1px;
+            padding-right: 1px;
+            text-align: justify;
+            font-family: Jura;
+            font-size: 13px;
+        }
+    </style>
     <style type="text/css">
         /* Create three unequal columns that floats next to each other */
 
@@ -77,7 +144,6 @@
         }
 
         .columnT p {
-          
             text-align: justify;
             font-family: Jura;
             font-size: 15px;
@@ -94,7 +160,7 @@
             }
 
             .columnT p {
-                 text-align: justify;
+                text-align: justify;
                 font-family: Jura;
                 font-size: 12px;
             }
@@ -126,6 +192,7 @@
                 font-family: Jura;
                 font-size: 13px;
             }
+
             .columnT p {
                 text-align: justify;
                 font-family: Jura;
@@ -142,6 +209,7 @@
                 font-family: Jura;
                 font-size: 15px;
             }
+
             .columnT p {
                 text-align: justify;
                 font-family: Jura;
@@ -231,7 +299,7 @@
             .price li {
                 padding: 5px;
                 text-align: justify;
-                font-size: 15px;
+                font-size: 13px;
                 width: 100%;
             }
 
@@ -255,92 +323,86 @@
 </head>
 
 <body>
-   
-    <div class="container">
 
-        <div class="row">
-            <div class="columnB" style="background-color:#fff;">
-                <p>
-                    The block-based drag-and-drop coding
-                    is honestly one of the best and simplest
-                    ways to introduce kids to coding. 
-                </p>
-                <p>
-                    Visual coding blocks greatly reduce the risk of
-                    simple syntax errors (like forgetting a colon
-                    or mixing up a closed parenthesis with a
-                    closed bracket) getting in the way of learning
-                    coding fundamentals.!
-                </p>
-
-
-            </div>
-            <div class="columnS" style="background-color:#fff;">
-                <img src="images/kid.png" style="max-width:100%;height:auto;"/>
-
-            </div>
-            <div class="columnT">
-                <div class="columnsPrice">
-                    <ul class="columnsPrice price">
-                        <li class="columnsPrice price header">Programming Level- I</li>
-                        <li>C$90 / Month</li>
-                        <li>Age 7+</li>
-                        <li>Scratch</li>
-                        <li>16 Weeks(4 Months)</li>
-                        <li>1 hour per week</li>
-                        <li>Lessons, Practice</li>
-                        <li>Projects</li>
-                        <li><a class="button" href="Register.html">Register</a></li>
-
-                    </ul>
-                </div>
-
-
-
-
-            </div>
-            </div>
-            <div class="row">
-                <div class="columnB" style="background-color:#fff;">
-                    <p>
-                        The ability to code computer programs is an important part of literacy in today’
-                        s society.
-                    </p>
-                    <p>
-                        When people learn to code in Scratch, they learn important strategies for solving problems,designing projects, and communicating ideas.
-                    </p>
-
-
-                </div>
-                <div class="columnS" style="background-color:#fff;">
-                    <img src="images/teenager.png" style="max-width:100%;height:auto;" />
-
-                </div>
-                <div class="columnT">
-                    <div class="columnsPrice">
-                                             <ul class="columnsPrice price">
-                            <li class="columnsPrice price header">Programming Level- I I</li>
-                            <li>C$110 / Month</li>
-                            <li>Age 8+</li>
-                            <li style="text-align:justify">Scratch, Intro to Thunkable</li>
-                            <li>20 Weeks(5 Months)</li>
-                            <li>1 hour per week</li>
-                            <li>Lessons, Practice</li>
-                            <li>Projects</li>
-                            <li><a href="Register.html" class="button">Register</a></li>
-                        </ul>
-                    </div>
-                   
-                </div>
-
-            </div>
+    <div class="grid-container">
+        <div class="item1" style="background-color:#fff;">
+            <p>
+                The block-based drag-and-drop coding
+                is honestly one of the best and simplest
+                ways to introduce kids to coding.
+            </p>
+            <p>
+                Visual coding blocks greatly reduce the risk of
+                simple syntax errors (like forgetting a colon
+                or mixing up a closed parenthesis with a
+                closed bracket) getting in the way of learning
+                coding fundamentals.!
+            </p>
 
 
         </div>
-   
+        <div class="item2">    <img src="images/kid.png" style="max-width:100%;height:auto;" /></div>
+        <div class="item3"><div class="columnsPrice">
+    <ul class="columnsPrice price">
+        <li class="columnsPrice price header">Programming Level- I</li>
+        <li>C$90 / Month</li>
+        <li>Age 7+</li>
+        <li>Scratch</li>
+        <li>16 Weeks(4 Months)</li>
+        <li>1 hour per week</li>
+        <li>Lessons, Practice</li>
+        <li>Projects</li>
+        <li><a class="button" href="Register.html">Register</a></li>
+
+    </ul>
+</div></div>
+        <div class="item4"></div>
+    
+
+        <div class="item6">
+            <p>
+                The ability to code computer programs is an important part of literacy in today’
+                s society.
+            </p>
+            <p>
+                When people learn to code in Scratch, they learn important strategies 
+                for solving problems,designing projects, and communicating ideas.
+            </p>
+          
+
+        </div>
+        <div class="item7">
+            <img src="images/teenager.png" style="max-width:100%;height:auto;" />
+        </div>
+        <div class="item8">
+            <div class="columnsPrice">
+                <ul class="columnsPrice price">
+                    <li class="columnsPrice price header">Programming Level- I I</li>
+                    <li>C$110 / Month</li>
+                    <li>Age 8+</li>
+                    <li style="text-align:justify">Scratch, Intro to Thunkable</li>
+                    <li>20 Weeks(5 Months)</li>
+                    <li>1 hour per week</li>
+                    <li>Lessons, Practice</li>
+                    <li>Projects</li>
+                    <li><a href="Register.html" class="button">Register</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="item9">
+        </div>
 
 
-   
+
+    </div>
+
+
+
+    
+
+
+
+
 
 
 

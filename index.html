@@ -30,18 +30,81 @@
             z-index: 10;
             text-align: center;
         }
+
+        .item1 {
+            grid-area: header;
+            background-color:#f3f9fd;
+        }
+
+      
+
+        .item2 {
+            grid-area: main;
+        }
+
+        .item3 {
+            grid-area: right;
+        }
+
+
+
+        .item4 {
+            grid-area: footer;
+            background-color: #E5B340;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header header header header header' 
+                                 'main main main main main'
+                                  'main main main main main'
+                                  'footer footer footer footer footer ';
+            grid-gap: 10px;
+            background-color: #fff;
+            padding: 10px;
+            width:100%;
+            bottom:0;
+
+        }
+
+
+
+        .grid-item {
+           
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 20px;
+           
+            text-align: center;
+        }
+
+        .grid-container > div {
+            
+            text-align: center;
+            padding: 20px 0;
+          
+        }
+        #TopDiv {
+            position: fixed;
+            width: 100%;
+            margin-top: 0px;
+            background-color: #f3f9fd;
+            z-index: 10;
+            text-align: center;
+        }
+        
     </style>
     
 </head>
 
 <body>
-    <div id="Custom_Size__1">
 
-        <header style=" flex: 0 0 auto; background-color: #dcdcdc;">
-            <div id="TopDiv" >
+
+    <div class="grid-container">
+        <div class="item1">
+            <div class="TopDiv">
                 <div style="width:100%;background-color:#E5B340;height:15px;"></div>
                 <a href="/HomePageper.html" target="targetframe" style="text-decoration:none;">
-                    <img src="images/Logo_Final1111.png" style="margin-top:0px;max-width:100%;height:auto;" />
+                    <img src="images/Logo_Final4.png" style="margin-top:0px;max-width:100%;height:auto;" />
                 </a>
                 <nav class="secondary_header" id="menu">
 
@@ -52,28 +115,33 @@
 
                     </ul>
                 </nav>
-
             </div>
-        </header>
-        <div style=" flex: 1 1 auto; position: relative;overflow-y: auto;">
-
-            <iframe src="/HomePageper.html" class="responsive-iframe" name="targetframe" allowfullscreen="true" ; style="max-height:100%;"
-                    webkitallowfullscreen="true" mozallowfullscreen="true">
-            </iframe>
-
 
         </div>
+        
+        <div class="item2">
+         
+                <iframe src="/HomePageper.html" class="responsive-iframe" name="targetframe" allowfullscreen="true" ; style="max-height:100%;"
+                        webkitallowfullscreen="true" mozallowfullscreen="true">
+                </iframe>
+          
+        </div>
 
-        <footer style=" flex: 0 0 auto; background-color: #dcdcdc;">
-            <div>
+        
+       
+        <div class="item4">
+            <div style="background-color: #E5B340;">
                 <span style="float:left;color:#000;font-family:Jura;font-size:small;font-weight:bold">© 2021 Coder Crew Corporation</span>
                 <a style="float:right;text-decoration:none;color:#000;font-family:Jura;font-size:small;padding-right:10px;font-weight:bold" target="_blank" href="/PrivacyPolicy.html">Privacy policy</a>
-              
-                <a style="padding-left:50px;float:right;text-decoration:none;color:#000;font-family:Jura;font-size:small;font-weight:bold;margin-right:50px;" href="/TermsandConditionsofUse.html" target="_blank" >Terms and conditions</a>
+
+                <a style="padding-left:50px;float:right;text-decoration:none;color:#000;font-family:Jura;font-size:small;font-weight:bold;margin-right:50px;" href="/TermsandConditionsofUse.html" target="_blank">Terms and conditions</a>
             </div>
-        </footer>
+        </div>
     </div>
+
+
    
+
 
 </body>
 </html>

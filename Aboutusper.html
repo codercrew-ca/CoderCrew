@@ -18,171 +18,114 @@
 		<![endif]-->
 
 	<style type="text/css">
-		/* Create three unequal columns that floats next to each other */
-		@charset "UTF-8";
 
 
 
-		@media (max-width: 64rem) {
-			.resp .paging-navigation .page-numbers {
-				display: inline-block;
-			}
-		}
-
-
-		/* Change the width of the three columns to 100%
-		(to stack horizontally on small screens) */
-		@media only screen and (max-width: 600px) {
-			.columns {
-				width: 100%;
-			}
-		}
-
-
-		container {
-			align-content: stretch;
-			width: 100%;
-		}
-
-		.row {
-			display: flex;
-			flex-wrap: wrap;
-			margin: 0px;
+		.grid-container {
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			grid-gap: 0px;
+			background-color: #fff;
 			padding: 0px;
-			align-content: stretch;
 			justify-content: center;
 		}
 
-		/* Create three unequal columns that floats next to each other */
-		.columnS {
-			flex: 20%;
-			margin-top: 10px;
-			padding-top: 10px;
-			float: left;
+		.item2 {
+			justify-self: stretch;
 		}
 
-      
-
-            .columnB {
-                flex: 50%;
-                padding: 0px;
-                margin: 10px;
-            }
-
-           
+		.item6 {
+			justify-self: stretch;
+		}
 
 
+		.grid-item {
+			border: 1px solid rgba(0, 0, 0, 0.8);
+			padding: 0px;
+			text-align: center;
+			background-color: aqua;
+		}
 
-        @media (max-width: 320px) {
-            .columnB p {
-                padding-left: 4px;
-                padding-right: 4px;
-                text-align: justify;
-                font-family: Jura;
-                font-size: 12px;
-            }
-        }
+		.grid-container > div {
+			background-color: rgba(255, 255, 255, 0.8);
+			text-align: center;
+			padding: 2px 0;
+		}
 
-                @media (min-width: 321px) and (max-width: 768px) {
-                    .columnB p {
-                        padding-left: 7px;
-                        padding-right: 7px;
-                        text-align: justify;
-                        font-family: Jura;
-                        font-size: 13px;
-                    }
-                }
+		.item5 {
+			grid-column-start: 1;
+			grid-column-end: 5;
+		}
 
-                @media (min-width: 769px) {
+		.item1 {
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-left: 1px;
+			padding-right: 1px;
+			text-align: justify;
+			font-family: Jura;
+			font-size: 13px;
+		}
 
-                    .columnB p {
-                        padding-left: 14px;
-                        padding-right: 14px;
-                        text-align: justify;
-                        font-family: Jura;
-                        font-size: 15px;
-                    }
-                }
-                /* Clear floats after the columns */
-                .row:after {
-                    content: "";
-                    display: table;
-                    clear: both;
-                }
-
-                /* Style the footer */
-                .footer {
-                    background-color: #f1f1f1;
-                    padding: 10px;
-                    text-align: center;
-					z-index:10;
-                }
-
-                /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-                @media (max-width: 600px) {
-                    .column.side, .column.middle {
-                        width: 100%;
-                    }
-                }
-
-                .Custom_Size__1 {
-                    width: 100%;
-                    height: auto;
-                    text-align: center;
-                    margin: 0;
-                    padding: 2%;
-                   
-                }
+		.item7 {
+			text-align: justify;
+			font-family: Jura;
+			padding-left: 1px;
+			padding-right: 1px;
+			text-align: justify;
+			font-family: Jura;
+			font-size: 13px;
+		}
 	</style>
+	
 </head>
 <body>
+	<div class="grid-container">
+		<div class="item1" style="background-color:#fff;">
+			<p> “History will judge us by the difference we make in the everyday lives of children.” - Nelson Mandela</p>
+			<p>
+				We believe in the power of dreams, the joy of fulfilment and the legacy of success. And providing
+				children the knowledge to work towards fulfilling theirs, is what we are all about.
+			</p>
+			<p>
+				A group of like minded parents, with several years of experience in the field of Information
+				technology have teamed up to be the wind beneath the wings of little aspirants to help them
+				have a goal, work towards it and see them conquer it.
+			</p>
+			<p>
+				It’s always a new beginning, evolving as we go, embracing the latest in technology and assuring
+				that what the child learns today will be a strong foundation for his tomorrow.
+			</p>
+		</div>
+		<div class="item2"><img src="images/story11.png" style="max-width:100%;height:auto;" /></div>
+		<div class="item3"></div>
+		<div class="item4"></div>
+		
 
-	<div id="Custom_Size__1">
-
-		<div class="row">
-			<div class="columnB" style="background-color:#fff;">
-				<p> “History will judge us by the difference we make in the everyday lives of children.” - Nelson Mandela</p>
-				<p>
-					We believe in the power of dreams, the joy of fulfilment and the legacy of success. And providing
-					children the knowledge to work towards fulfilling theirs, is what we are all about.
-				</p>
-				<p>
-					A group of like minded parents, with several years of experience in the field of Information
-					technology have teamed up to be the wind beneath the wings of little aspirants to help them
-					have a goal, work towards it and see them conquer it.
-				</p>
-				<p>
-					It’s always a new beginning, evolving as we go, embracing the latest in technology and assuring
-					that what the child learns today will be a strong foundation for his tomorrow.
-				</p>
-
-			</div>
-			<div class="columnS" style="background-color:#fff;">
-				<img src="images/story11.png" style="max-width:100%;height:auto;" />
-
-			</div>
+		<div class="item6">
+			<img src="images/vision11.png" style="max-width:100%;height:auto;" />
 
 		</div>
-		<div class="row">
-			<div class="columnS" style="background-color:#fff;">
-				<img src="images/vision11.png" style="max-width:100%;height:auto;" />
-
-			</div>
-			<div class="columnB" style="background-color:#fff;">
-				<p>At Coder Crew we aim to provide the best learning experience to a child, of the latest technology, helping them discover the numerous possibilities of problem solving using this technology and channelizing their abilities to create a working model of the solution.</p>
-				<p>We aim to….</p>
-				<ul>
-					<li><p>empower them with the ability of logical and critical thinking which would trump all academic skills going forward.</p></li>
-					<li><p>provide an in-depth knowledge of technology starting with the basics which ensures a strong foundation to build on.</p></li>
-					<li><p>give children the power of technology to bring their dreams to life and to awaken little minds to the numerous possibilities of problem solving.</p></li>
-					<li><p>We believe that bringing in the fun element into learning helps retain their interest and motivates them to explore beyond their lessons.</p></li>
-				</ul>
-				<p>After all, Education is about helping children discover their ideas, giving them the tools to build and preparing them to launch themselves into the world of infinite possibilities.</p>
-
-			</div>
+		<div class="item7">
+			<p>At Coder Crew we aim to provide the best learning experience to a child, of the latest technology, helping them discover the numerous possibilities of problem solving using this technology and channelizing their abilities to create a working model of the solution.</p>
+			<p>We aim to….</p>
+			<ul>
+				<li><p>empower them with the ability of logical and critical thinking which would trump all academic skills going forward.</p></li>
+				<li><p>provide an in-depth knowledge of technology starting with the basics which ensures a strong foundation to build on.</p></li>
+				<li><p>give children the power of technology to bring their dreams to life and to awaken little minds to the numerous possibilities of problem solving.</p></li>
+				<li><p>We believe that bringing in the fun element into learning helps retain their interest and motivates them to explore beyond their lessons.</p></li>
+			</ul>
+			<p>After all, Education is about helping children discover their ideas, giving them the tools to build and preparing them to launch themselves into the world of infinite possibilities.</p>
 
 		</div>
+		<div class="item8"></div>
+		<div class="item9">
+		</div>
+
+
+
 	</div>
+
 
 
 </body>
