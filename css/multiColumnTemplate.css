@@ -17,6 +17,14 @@
     .resp .paging-navigation .page-numbers {
         display: inline-block;
     }
+
+    .secondary_header ul ul li {
+        width: 150px;
+        display: inline;
+        float: none;
+        position: relative;
+    }
+
 }
 
 .container {
@@ -180,8 +188,7 @@ secondary_header .logo a img {
     display: list-item;
     float: none;
     position: relative;
-   
-}
+   }
 
 
 .secondary_header ul ul ul li {
